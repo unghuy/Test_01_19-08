@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 16px;
+  color: #2c2e35;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 0;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.bold {
+  font-weight: bold;
+}/*# sourceMappingURL=reset.css.map */

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <title>UI Republic</title>
+
+    <!-- Icon Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+    />
+
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
+    <!-- Reset Style -->
+    <link rel="stylesheet" href="./assets/reset.css" />
+
+    <!-- Font -->
+    <link rel="stylesheet" href="./assets/font.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/animations.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="container">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./assets/images/logo.png" alt="UI Republic Logo" />
+            </div>
+            <a aria-label="mobile menu" class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#1" class="menu__link">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#2" class="menu__link">Bedroom</a>
+              </li>
+              <li class="menu__item">
+                <a href="#3" class="menu__link">Lounge</a>
+              </li>
+              <li class="menu__item">
+                <a href="#4" class="menu__link">Kitchen</a>
+              </li>
+              <li class="menu__item">
+                <a href="#5" class="menu__link">Lighting</a>
+              </li>
+            </ul>
+            <div class="search">
+              <form class="search-bar">
+                <input class="search-bar__input-text" type="text" />
+                <button>
+                  <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="cart">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+              <p class="amount">3</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="wrapper">
+        <div class="container">
+          <div class="content">
+            <div class="content__left">
+              <h1 class="title">Premium collection</h1>
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit
+                </p>
+                <p class="price bold">£2,300</p>
+              </div>
+              <button class="btn">View the collection</button>
+            </div>
+            <div class="content__right">
+              <img
+                src="./assets/images/banner.png"
+                alt="Banner"
+                class="banner__bg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eminent -->
+    <section class="eminent">
+      <div class="wrapper">
+        <div class="container">
+          <div class="content">
+            <div class="eminent__left">
+              <div class="slider-wrapper" id="slider">
+                <div class="slider">
+                  <div class="slider-item">
+                    <img src="./assets/images/img1.png" alt="" />
+                  </div>
+                  <div class="slider-item">
+                    <img src="./assets/images/img2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eminent__right">
+              <p class="eminent__category">Living room</p>
+              <div class="text">
+                <h2>Minimalist furniture</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismorem
+                </p>
+              </div>
+              <button class="btn">View armchairs</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special discounts -->
+    <section class="discount">
+      <div class="wrapper">
+        <div class="container">
+          <h2 class="discount__title">Special discounts</h2>
+          <div class="discount__slider-wrapper">
+            <div class="discount__slider">
+              <div class="slider-item">
+                <div class="slider-item__content">
+                  <div class="slider-item__img">
+                    <img src="./assets/images/sale1.png" alt="Sweedish white" />
+                    <p class="slider-item__category">Chairs</p>
+                  </div>
+                  <div class="slider-item__info">
+                    <p class="slider-item__info__name">Sweedish white</p>
+                    <div class="slider-item__info__price">
+                      <span class="price-text bold">£299</span>
+                      <span class="price-text-sale bold">£199</span>
+                      <span>|</span>
+                      <span
+                        >next day delivery
+                        <i class="fa-solid fa-truck fa-flip-horizontal"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="slider-item__btn-view">
+                    <button class="btn">View Sweedish white</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-item__content">
+                  <div class="slider-item__img">
+                    <img src="./assets/images/sale2.png" alt="Tri-post table" />
+                    <p class="slider-item__category">Tables</p>
+                  </div>
+                  <div class="slider-item__info">
+                    <p class="slider-item__info__name">Tri-post table</p>
+                    <div class="slider-item__info__price">
+                      <span class="price-text">£299</span>
+                      <span class="price-text__sale">£199</span>
+                      <span>|</span>
+                      <span
+                        >next day delivery
+                        <i class="fa-solid fa-truck fa-flip-horizontal"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="slider-item__btn-view">
+                    <button class="btn">View Sweedish white</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-item__content">
+                  <div class="slider-item__img">
+                    <img src="./assets/images/sale3.png" alt="Pixar lamp" />
+                    <p class="slider-item__category">Lamps</p>
+                  </div>
+                  <div class="slider-item__info">
+                    <p class="slider-item__info__name">Pixar lamp</p>
+                    <div class="slider-item__info__price">
+                      <span class="price-text">£299</span>
+                      <span class="price-text__sale">£199</span>
+                      <span>|</span>
+                      <span
+                        >next day delivery
+                        <i class="fa-solid fa-truck fa-flip-horizontal"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="slider-item__btn-view">
+                    <button class="btn">View Sweedish white</button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-item__content">
+                  <div class="slider-item__img">
+                    <img src="./assets/images/sale4.png" alt="Sweedish white" />
+                    <p class="slider-item__category">Chairs</p>
+                  </div>
+                  <div class="slider-item__info">
+                    <p class="slider-item__info__name">Sweedish black</p>
+                    <div class="slider-item__info__price">
+                      <span class="price-text">£299</span>
+                      <span class="price-text__sale">£199</span>
+                      <span>|</span>
+                      <span
+                        >next day delivery
+                        <i class="fa-solid fa-truck fa-flip-horizontal"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="slider-item__btn-view">
+                    <button class="btn">View Sweedish white</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+    <section class="category">
+      <div class="wrapper">
+        <div class="container">
+          <div class="content">
+            <div class="category__content">
+              <div class="category__item">
+                <div class="grid-container">
+                  <div class="grid-item lounge">
+                    <h3>Lounge furniture</h3>
+                    <a href="#">View collections</a>
+                  </div>
+                  <div class="grid-item bedroom">
+                    <h3>Bedroom furniture</h3>
+                    <a href="#">View collections</a>
+                  </div>
+                  <div class="grid-item kitchen">
+                    <h3>Kitchens and kitchenware</h3>
+                    <a href="#">View collections</a>
+                  </div>
+                </div>
+              </div>
+              <div class="category__item">
+                <div class="flex-layout">
+                  <div class="flex-item special">
+                    <h3>Special offers</h3>
+                    <a href="#">View deals</a>
+                  </div>
+                  <div class="flex-item lighting">
+                    <h3>Lighting</h3>
+                    <a href="#">View collections</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Send Mail -->
+    <section class="s-email">
+      <div class="wrapper">
+        <div class="container">
+          <div class="s-email__content">
+            <div class="content-left">
+              <h2 class="s-email__title">Join our mailing list</h2>
+              <p class="s-email__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismorem Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh.
+              </p>
+            </div>
+            <div class="content-right">
+              <form class="form" action="">
+                <div class="form-group">
+                  <div class="form-group__item">
+                    <label class="bold" for="femail">Email address</label>
+                    <input type="text" class="input-text" />
+                  </div>
+                  <div class="form-group__item">
+                    <label class="bold" for="fname">Your Name</label>
+                    <input type="text" class="input-text" />
+                  </div>
+                </div>
+                <button class="btn btn-submit" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="container">
+          <div class="content">
+            <div class="department">
+              <h3>Department</h3>
+              <div class="flex-layout">
+                <div class="department__left">
+                  <div class="department__item">
+                    <div class="department__left__first">
+                      <h5>Living room</h5>
+                      <p>Sofas/chairs</p>
+                      <p>Lorem ipsum</p>
+                      <p>Dolor sit amet</p>
+                      <p>Consectetuer</p>
+                    </div>
+                    <div class="department__left__second">
+                      <h5>Bathroom</h5>
+                      <p>Sofas/chairs</p>
+                      <p>Lorem ipsum</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="department__right">
+                  <div class="department__right__first">
+                    <h5>Bathroom</h5>
+                    <p>Sofas/chairs</p>
+                    <p>Lorem ipsum</p>
+                  </div>
+                  <div class="department__right__second">
+                    <h5>Bedroom</h5>
+                    <p>Sofas/chairs</p>
+                    <p>Lorem ipsum</p>
+                    <p>Consectetuer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact">
+              <h3>Contact</h3>
+              <div class="contact__first">
+                <h5>Customer support</h5>
+                <p>Call 01482 128394</p>
+                <p>Send us a message</p>
+              </div>
+              <div class="contact__second">
+                <h5>The team</h5>
+                <p>About us</p>
+                <p>Team careers</p>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </p>
+            <p>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+            <p>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </p>
+            <p>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+            <p>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__text">
+        <div class="footer__text__wrapper">
+          <div class="container">
+            <p>Made in Hornsea, East Yorkshire, England | www.uirepublic.net</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./assets/scripts.js"></script>
+  </body>
+</html>

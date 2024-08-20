@@ -1,0 +1,469 @@
+$color-primary: #4ec0c6;
+$text-primary: #2c2e35;
+$text-second: #3d434c;
+$text-third: #ffffff;
+$dark: #231f20;
+$red: #ee003b;
+$orange: #f9a24c;
+$orange-second: rgba(249, 162, 76, 0.7);
+$pink: rgba(231, 117, 141, 0.7);
+$violet: rgba(133, 121, 175, 0.7);
+$blackshadow: rgba(70, 69, 77, 0.7);
+$mossy-green: rgba(78, 192, 198, 0.7);
+$porcelain: #f2f3f4;
+
+
+// CSS Header
+.wrapper {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.btn {
+  background-color: $color-primary;
+  padding: 26px 0;
+  color: $text-third;
+  width: 190px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $text-second;
+  }
+}
+
+header {
+  background-color: transparent;
+  
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 105px 0 200px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 25%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+
+  &__link {
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.search {
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 21px;
+    border: solid 3px $dark;
+
+    &__input-text {
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+    }
+
+    .icon-search {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+.cart {
+  position: relative;
+  font-size: 18px;
+  .amount {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $red;
+    color: $text-third;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: -17px;
+  }
+}
+
+// End CSS Header
+
+// CSS Banner
+.banner {
+  width: 100%;
+
+  &::after {
+    content: '';
+    background: url('./images/bg1.png') no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: -15%;
+    right: 0;
+    z-index: -1;
+  }
+
+  .content {
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 36%;
+
+      .text {
+        margin: 52px 0 100px;
+
+        p {
+          font-size: 14px;
+        }
+
+        .price {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__right {
+      width: 63%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// End CSS Banner
+
+// CSS Eminent
+
+.eminent {
+  .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .slider {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      height: 200px;
+
+      img {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 650px;
+        height: 450px;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  &__right {
+    margin-left: 120px;
+
+    .text {
+      margin: 25px 0 50px;
+
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__category {
+    display: inline-block;
+    font-weight: 700;
+    border-bottom: 3px solid $dark;
+  }
+}
+
+// End CSS Eminent
+
+// CSS Special discounts
+.discount {
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('./images/bg2.png') no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 115px;
+  }
+
+  .slider-item {
+    &__content {
+      text-align: center;
+      margin: 0 26px;
+    }
+
+    &__img {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 545px;
+      }
+    }
+
+    &__category {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-weight: 700;
+      line-height: 1.6;
+      border-bottom: 3px solid $dark;
+    }
+
+    &__info {
+      text-align: center;
+      margin: 32px auto 47px;
+
+      &__name {
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: -2px;
+      }
+
+      &__price {
+        font-size: 14px;
+
+        .price-text {
+          color: $red;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    .slick-list {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+// End CSS Special discounts
+
+// CSS Category
+
+.category {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 24px;
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 150px;
+
+      a {
+        border-bottom: 3px solid $dark;
+        padding-bottom: 20px;
+      }
+    }
+
+    .lounge {
+      background-image: linear-gradient($orange-second, $orange-second), url('./images/cate1.png');
+      grid-row: span 2;
+    }
+
+    .bedroom {
+      background-image: linear-gradient($pink, $pink), url('./images/cate2.png');
+    }
+
+    .kitchen {
+      background-image: linear-gradient($violet, $violet), url('./images/cate3.png');
+    }
+  }
+
+  .flex-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+
+    .flex-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 150px;
+
+      a {
+        border-bottom: 3px solid $dark;
+        padding-bottom: 20px;
+      }
+    }
+
+    .special {
+      color: $text-third;
+      width: 35%;
+      background-image: linear-gradient($blackshadow, $blackshadow), url('./images/cate4.png');
+
+      a {
+        border-bottom: 3px solid $text-third;
+      }
+    }
+
+    .lighting {
+      width: 65%;
+      background-image: linear-gradient($mossy-green, $mossy-green), url('./images/cate5.png');
+    }
+  }
+}
+
+// End CSS Category
+
+// CSS Email
+
+.s-email {
+  background-color: $porcelain;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0;
+    column-gap: 50px;
+  }
+
+  .content-left {
+    width: 50%;
+  }
+
+  .content-right {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &__item {
+      label {
+        font-weight: 900;
+      }
+
+      .input-text {
+        border-bottom: 1px solid $dark;
+        width: 100%;
+        max-width: 256px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .btn-submit {
+    background-color: $orange;
+    width: 100%;
+  }
+}
+
+// End CSS Email
+
+// CSS Footer
+
+.footer {
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url('./images/bg3-1.png') no-repeat;
+    width: 100%;
+    max-width: 680px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .content {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .department {
+    width: 55%;
+
+    .flex-layout {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .social {
+    color: $text-third;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    font-size: 26px;
+    padding-bottom: 60px;
+  }
+
+  &__text {
+    position: relative;
+    border-top: 3px solid rgba(70, 69, 77, 0.3);
+    padding: 52px 0;
+    z-index: -1;
+
+    &__wrapper {
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+}
+
+// End CSS Footer
