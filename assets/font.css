@@ -1,4 +1,8 @@
 @font-face {
-  font-family: "Source Code Pro";
+  font-family: "Source Code";
   src: url("./font/SourceCodePro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("./font/SourceSansPro-Regular.otf") format("opentype");
 }/*# sourceMappingURL=font.css.map */
