@@ -487,6 +487,12 @@ header {
   font-size: 26px;
   padding-bottom: 60px;
 }
+.footer .social P {
+  transition: color 0.3s ease;
+}
+.footer .social P:hover {
+  color: #3d434c;
+}
 .footer__text {
   position: relative;
   border-top: 3px solid rgba(70, 69, 77, 0.3);

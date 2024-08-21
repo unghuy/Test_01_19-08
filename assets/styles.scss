@@ -359,6 +359,7 @@ header {
       height: auto;
     }
   }
+
   .slider-wrapper {
     position: relative;
     overflow: hidden;
@@ -599,6 +600,7 @@ header {
     background-color: $orange;
     width: 100%;
     transition: background-color 0.3s ease;
+
     &:hover {
       background-color: $orange-second;
     }
@@ -645,6 +647,13 @@ header {
     column-gap: 20px;
     font-size: 26px;
     padding-bottom: 60px;
+
+    P {
+      transition: color 0.3s ease;
+      &:hover {
+        color: $text-second;
+      }
+    }
   }
 
   &__text {
