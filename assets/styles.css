@@ -18,6 +18,58 @@
   background-color: #3d434c;
 }
 
+.modal {
+  position: fixed;
+  z-index: 11;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal__content {
+  position: relative;
+  background-color: #d2242b;
+  margin: auto;
+  padding: 70px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-animation-name: animatetop;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.modal__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.modal__body {
+  color: #ffffff;
+  text-align: center;
+}
+.modal__body p {
+  font-size: 13px;
+}
+
+.is-hidden {
+  display: none;
+}
+
 header {
   background-color: transparent;
 }
@@ -144,6 +196,7 @@ header {
 .cart {
   position: relative;
   font-size: 18px;
+  cursor: pointer;
 }
 .cart .amount {
   width: 18px;
@@ -394,6 +447,10 @@ header {
 .s-email .btn-submit {
   background-color: #f9a24c;
   width: 100%;
+  transition: background-color 0.3s ease;
+}
+.s-email .btn-submit:hover {
+  background-color: rgba(249, 162, 76, 0.7);
 }
 
 .footer {

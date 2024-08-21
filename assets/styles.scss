@@ -11,6 +11,7 @@ $violet: rgba(133, 121, 175, 0.7);
 $blackshadow: rgba(70, 69, 77, 0.7);
 $mossy-green: rgba(78, 192, 198, 0.7);
 $porcelain: #f2f3f4;
+$bg-modal: #d2242b;
 
 $background-color_1: transparent;
 $background-color_2: #000000;
@@ -37,6 +38,92 @@ $background-color_2: #000000;
     background-color: $text-second;
   }
 }
+
+// CSS The Modal
+
+.modal {
+  position: fixed;
+  z-index: 11;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $background-color_2;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &__content {
+    position: relative;
+    background-color: $bg-modal;
+    margin: auto;
+    padding: 70px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-animation-name: animatetop;
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+    @-moz-keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    color: $text-third;
+    text-align: center;
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+// End CSS The Modal
 
 header {
   background-color: transparent;
@@ -187,6 +274,7 @@ header {
 .cart {
   position: relative;
   font-size: 18px;
+  cursor: pointer;
 
   .amount {
     width: 18px;
@@ -440,6 +528,7 @@ header {
         border-bottom: 3px solid $dark;
         padding-bottom: 20px;
         transition: font-weight 0.3s ease;
+
         &:hover {
           font-weight: bold;
         }
@@ -511,6 +600,10 @@ header {
   .btn-submit {
     background-color: $orange;
     width: 100%;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $orange-second;
+    }
   }
 }
 

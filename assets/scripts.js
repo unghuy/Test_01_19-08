@@ -1,3 +1,13 @@
+// The Modal
+$(".modal").on("click", function (e) {
+  $("#myModal").toggleClass("is-hidden");
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+});
+// End The Modal
+
+// Slider
 jQuery(document).ready(function ($) {
   setInterval(function () {
     moveRight();
@@ -40,7 +50,9 @@ jQuery(document).ready(function ($) {
     );
   }
 });
+// End Slider
 
+// Slick
 $(document).ready(function () {
   $(".discount__slider").slick({
     arrows: false,
@@ -55,8 +67,8 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 570,
@@ -64,12 +76,13 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
-    ]
+    ],
   });
 });
+// End Slick
 
 // Menu Mobile
 // TOGGLE HAMBURGER & COLLAPSE NAV

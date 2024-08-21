@@ -36,10 +36,37 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
-    <link rel="stylesheet" href="./assets/animations.css" />
     <link rel="stylesheet" href="./assets/responsive.css" />
   </head>
   <body>
+    <!-- The Modal -->
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal__content">
+        <div class="modal__header">
+          <img src="./assets/images/logo-white.png" alt="Logo" />
+        </div>
+        <div class="modal__body">
+          <h3>Whoop, free stuff!</h3>
+          <p>
+            I hope you find this this artwork useful, hopefully everything is
+            pretty straight forward. If you have any questions please follow the
+            contact link on the about page uirepublic.net/about
+          </p>
+          <h3>Fonts</h3>
+          <p>Fonts use in this document are all complete free:</p>
+          <p><span class="bold">Roboto: </span>https://www.fontsquirrel.com/fonts/roboto</p>
+          <p><span class="bold">Source sans pro: </span>https://www.fontsquirrel.com/fonts/source-sans-pro</p>
+          <br>
+          <br>
+          <p>Icons not supplied as vectors are free from font awesome...</p>
+          <p><span class="bold">Font awesome: </span>fontawesome.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End The Modal -->
     <header class="header">
       <div class="wrapper">
         <div class="container">
@@ -126,10 +153,10 @@
               <div class="slider-wrapper" id="slider">
                 <div class="slider">
                   <div class="slider-item">
-                    <img src="./assets/images/img1.png" alt="" />
+                    <img src="./assets/images/img1.png" alt="Image 01" />
                   </div>
                   <div class="slider-item">
-                    <img src="./assets/images/img2.png" alt="" />
+                    <img src="./assets/images/img2.png" alt="Image 02" />
                   </div>
                 </div>
               </div>
@@ -309,14 +336,18 @@
               </p>
             </div>
             <div class="content-right">
-              <form class="form" action="">
+              <form class="form" action="#" method="post">
                 <div class="form-group">
                   <div class="form-group__item">
-                    <label class="form-group__item__label bold" for="femail">Email address</label>
+                    <label class="form-group__item__label bold" for="femail"
+                      >Email address</label
+                    >
                     <input type="text" class="input-text" />
                   </div>
                   <div class="form-group__item">
-                    <label class="form-group__item__label bold" for="fname">Your Name</label>
+                    <label class="form-group__item__label bold" for="fname"
+                      >Your Name</label
+                    >
                     <input type="text" class="input-text" />
                   </div>
                 </div>
