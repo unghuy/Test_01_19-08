@@ -308,6 +308,10 @@ header {
 .category .grid-container .grid-item a {
   border-bottom: 3px solid #231f20;
   padding-bottom: 20px;
+  transition: font-weight 0.3s ease;
+}
+.category .grid-container .grid-item a:hover {
+  font-weight: bold;
 }
 .category .grid-container .lounge {
   background-image: linear-gradient(rgba(249, 162, 76, 0.7), rgba(249, 162, 76, 0.7)), url("./images/cate1.png");
@@ -336,6 +340,10 @@ header {
 .category .flex-layout .flex-item a {
   border-bottom: 3px solid #231f20;
   padding-bottom: 20px;
+  transition: font-weight 0.3s ease;
+}
+.category .flex-layout .flex-item a:hover {
+  font-weight: bold;
 }
 .category .flex-layout .special {
   color: #ffffff;

@@ -86,7 +86,7 @@
     margin: 10px auto;
   }
   .eminent .slider-wrapper .slider img {
-    width: 325px;
+    width: 320px;
   }
   .discount::before {
     width: 50%;
@@ -159,6 +159,10 @@
   .content {
     flex-direction: column;
     margin: 20px 0;
+  }
+  .banner::after {
+    width: 200px;
+    height: 575px;
   }
   .banner .content__left .text .price {
     font-size: 13px;
