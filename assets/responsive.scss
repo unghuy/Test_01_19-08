@@ -19,6 +19,26 @@
     font-size: 36px;
   }
 
+  .banner {
+    .content {
+
+      &__left,
+      &__right {
+        width: 50%;
+      }
+
+      &__left {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    margin: 80px 0;
+  }
+
   .navbar {
     position: fixed;
     top: 0;
@@ -50,26 +70,6 @@
   }
 
   .banner {
-    .content {
-
-      &__left,
-      &__right {
-        width: 50%;
-      }
-
-      &__left {
-        margin-right: 50px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .content {
-    margin: 80px 0;
-  }
-
-  .banner {
     &::after {
       width: 550px;
       height: 675px;
@@ -77,11 +77,9 @@
   }
 
   .eminent {
-    .slider-wrapper {
-      .slider {
-        img {
-          width: 480px;
-        }
+    &__slider {
+      img {
+        width: 480px;
       }
     }
 
@@ -145,11 +143,9 @@
   }
 
   .eminent {
-    .slider-wrapper {
-      .slider {
-        img {
-          width: 320px;
-        }
+    &__slider {
+      img {
+        width: 480px;
       }
     }
   }
@@ -174,8 +170,6 @@
     }
 
     .flex-layout {
-      // display: grid;
-      // grid-template-columns: 1fr;
       flex-direction: column;
 
       .special,
@@ -210,9 +204,17 @@
       margin-bottom: 25px;
 
       &__item {
+        &:last-child {
+          margin-top: 25px;
+        }
+
         &__label {
           width: 125px;
           margin-right: 20px;
+        }
+
+        .input-text {
+          margin-top: 0;
         }
       }
     }
@@ -289,11 +291,9 @@
       }
     }
 
-    .slider-wrapper {
-      .slider {
-        img {
-          width: 325px;
-        }
+    &__slider {
+      img {
+        width: 325px;
       }
     }
   }
@@ -336,6 +336,12 @@
     }
   }
 
+  .s-email {
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+
   .footer {
     &__text {
       padding: 15px 0;
@@ -369,8 +375,7 @@
   }
 }
 
-@media only screen and (min-width: 1281px) {
-
+@media only screen and (min-width: 1025px) {
   .nav-toggle {
     display: none;
   }

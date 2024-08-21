@@ -248,17 +248,13 @@ header {
   height: 100%;
 }
 
-.eminent .slider-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-.eminent .slider-wrapper .slider {
+.eminent__slider {
   position: relative;
   margin: 0;
   padding: 0;
   height: 200px;
 }
-.eminent .slider-wrapper .slider img {
+.eminent__slider img {
   position: relative;
   display: block;
   float: left;
@@ -266,6 +262,10 @@ header {
   padding: 0;
   width: 650px;
   height: auto;
+}
+.eminent .slider-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 .eminent::after {
   content: "";

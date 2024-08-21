@@ -344,26 +344,25 @@ header {
 // CSS Eminent
 
 .eminent {
+  &__slider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+
+    img {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 650px;
+      height: auto;
+    }
+  }
   .slider-wrapper {
     position: relative;
     overflow: hidden;
-
-    .slider {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      height: 200px;
-
-      img {
-        position: relative;
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0;
-        width: 650px;
-        height: auto;
-      }
-    }
   }
 
   &::after {
