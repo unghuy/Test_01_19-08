@@ -47,6 +47,38 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   });
+});
+
+// Menu Mobile
+// TOGGLE HAMBURGER & COLLAPSE NAV
+$(".nav-toggle").on("click", function () {
+  $(this).toggleClass("open");
+  $(".menu").toggleClass("collapse");
+});
+// REMOVE X & COLLAPSE NAV ON ON CLICK
+$(".menu .menu__link").on("click", function () {
+  $(".nav-toggle").removeClass("open");
+  $(".menu").removeClass("collapse");
 });
