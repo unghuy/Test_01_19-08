@@ -144,7 +144,7 @@
     .slider-wrapper {
       .slider {
         img {
-          width: 325px;
+          width: 320px;
         }
       }
     }
@@ -256,6 +256,11 @@
   }
 
   .banner {
+    &::after {
+      width: 200px;
+      height: 575px;
+    }
+
     .content {
       &__left {
         .text {
@@ -353,6 +358,7 @@
     .contact {
       margin-top: 20px;
     }
+
     .social {
       padding-bottom: 0;
     }
