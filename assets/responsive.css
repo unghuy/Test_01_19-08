@@ -76,6 +76,9 @@
     padding: 15px 0;
     width: 135px;
   }
+  .modal {
+    display: none;
+  }
   .banner .content {
     flex-direction: column-reverse;
   }

@@ -123,6 +123,10 @@
     width: 135px;
   }
 
+  .modal {
+    display: none;
+  }
+
   .banner {
     .content {
       flex-direction: column-reverse;
